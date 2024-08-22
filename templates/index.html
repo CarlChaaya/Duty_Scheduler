@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Scheduling</title>
+</head>
+<body>
+    <h1>Intern Scheduler</h1>
+    <form method="POST">
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required><br><br>
+
+        <label for="intern_list">Intern List (comma separated):</label>
+        <input type="text" id="intern_list" name="intern_list" required><br><br>
+
+        <label for="min_interns_per_duty">Minimum Interns per Duty:</label>
+        <input type="number" id="min_interns_per_duty" name="min_interns_per_duty" value="2" required><br><br>
+
+        <label for="units_per_intern">Units per Intern:</label>
+        <input type="number" id="units_per_intern" name="units_per_intern" value="22" required><br><br>
+
+        <label for="minimum_spacing">Minimum Spacing Between Shifts:</label>
+        <input type="number" id="minimum_spacing" name="minimum_spacing" value="3" required><br><br>
+
+        <input type="submit" value="Generate Schedule">
+    </form>
+</body>
+</html>
