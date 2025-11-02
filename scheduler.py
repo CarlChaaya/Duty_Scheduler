@@ -1,10 +1,13 @@
-import pandas as pd
+"""Constraint-based scheduling engine for the duty roster app."""
+
+import random
 from datetime import datetime, timedelta
+
+import pandas as pd
 import pulp
 from openpyxl import Workbook
+from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils.dataframe import dataframe_to_rows
-from openpyxl.styles import PatternFill, Font, Border, Side, Alignment
-import random
 
 
 class InternScheduler:
